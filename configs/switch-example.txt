@@ -1,0 +1,38 @@
+! ILLUSTRATIVE ONLY — adapt interfaces to the selected Packet Tracer switch
+hostname SW-ACCESS
+no ip domain-lookup
+
+vlan 10
+ name ADMIN
+vlan 20
+ name CLINICAL
+vlan 30
+ name IT-MGMT
+vlan 40
+ name STAFF-WIFI
+vlan 50
+ name GUEST-WIFI
+vlan 60
+ name SERVICES
+vlan 999
+ name UNUSED-NATIVE
+
+interface gigabitEthernet0/1
+ description Trunk_to_R-EDGE
+ switchport mode trunk
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 10,20,30,40,50,60,999
+
+! Example endpoint port — repeat with the correct VLAN for each device
+interface fastEthernet0/2
+ description Admin_PC
+ switchport mode access
+ switchport access vlan 10
+ spanning-tree portfast
+
+! Place unused ports into VLAN 999 and administratively shut them down.
+! Select the exact unused interface range before applying this practice.
+
+banner motd ^CAuthorised lab access only.^C
+service password-encryption
+! Add SSH/user configuration interactively; never commit the secret.
