@@ -1,0 +1,22 @@
+# Cisco Packet Tracer autosave/backup files
+*.pkt.autosave
+*.bak
+*.tmp
+
+# Packet captures are excluded by default because they may contain sensitive data.
+*.pcap
+*.pcapng
+*.cap
+
+# Credentials and local environment files
+.env
+.env.*
+*.key
+*.pem
+secrets/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
