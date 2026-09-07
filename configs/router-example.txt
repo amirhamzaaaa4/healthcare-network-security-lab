@@ -1,0 +1,37 @@
+! ILLUSTRATIVE ONLY — confirm interface names and feature support
+hostname R-EDGE
+no ip domain-lookup
+
+interface gigabitEthernet0/0
+ description Trunk_to_SW-ACCESS
+ no shutdown
+
+interface gigabitEthernet0/0.10
+ encapsulation dot1Q 10
+ ip address 10.10.10.1 255.255.255.0
+interface gigabitEthernet0/0.20
+ encapsulation dot1Q 20
+ ip address 10.10.20.1 255.255.255.0
+interface gigabitEthernet0/0.30
+ encapsulation dot1Q 30
+ ip address 10.10.30.1 255.255.255.0
+interface gigabitEthernet0/0.40
+ encapsulation dot1Q 40
+ ip address 10.10.40.1 255.255.255.0
+interface gigabitEthernet0/0.50
+ encapsulation dot1Q 50
+ ip address 10.10.50.1 255.255.255.0
+ ip access-group GUEST-IN in
+interface gigabitEthernet0/0.60
+ encapsulation dot1Q 60
+ ip address 10.10.60.1 255.255.255.0
+
+! Guest policy: prevent access to lab private ranges.
+! An upstream/default route and explicit required service exceptions may be needed.
+ip access-list extended GUEST-IN
+ deny ip 10.10.50.0 0.0.0.255 10.10.0.0 0.0.255.255
+ permit ip 10.10.50.0 0.0.0.255 any
+
+banner motd ^CAuthorised lab access only.^C
+service password-encryption
+! Configure SSH with a non-committed secret and restrict VTY access to IT-MGMT.
