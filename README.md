@@ -2,7 +2,7 @@
 
 A reproducible networking portfolio project that translates practical coursework into a fictional small-clinic scenario. It demonstrates foundational network design, IPv4 configuration, wired and wireless connectivity, troubleshooting, and packet analysis without publishing assessment material or real network identifiers.
 
-> **Evidence status:** The foundational skills below were practised in COIT11238 coursework. The clinic design, segmented addressing plan, ACLs, secure Wi-Fi, VPN, monitoring, and other hardening items are **portfolio extensions proposed for a new lab**. They are not claimed as completed until Amir rebuilds and verifies them using the guides in this repository.
+> **Evidence status:** I practised the foundational skills below in COIT11238 coursework. The clinic design, segmented addressing plan, ACLs, secure Wi-Fi, VPN, monitoring, and other hardening items are **portfolio extensions proposed for a new lab**. I do not claim them as completed until I rebuild and verify them using the guides in this repository.
 
 ## Skills represented truthfully
 
@@ -11,6 +11,14 @@ A reproducible networking portfolio project that translates practical coursework
 | Practised in coursework | Cisco Packet Tracer topology design; IPv4 addressing; wired/wireless LANs; `ping`, `tracert`, `ipconfig`, and ARP inspection; DNS/DHCP concepts; Wireshark ICMP inspection; Ethernet and TCP/IP fundamentals; VPN, firewall, authentication, and encryption concepts |
 | Proposed portfolio extensions | VLAN segmentation; router-on-a-stick; inter-VLAN ACLs; dedicated guest Wi-Fi; hardened device administration; central logging/SIEM; MFA; site-to-site VPN implementation |
 | Deliberately not included | Fabricated `.pkt` files, fabricated `.pcap/.pcapng` captures, copied assessment questions, real credentials, real MAC addresses, or private institutional network details |
+
+## Genuine coursework evidence
+
+The screenshot below was extracted from my submitted coursework and shows a genuine Cisco Packet Tracer wired/wireless topology. It was cropped and re-encoded to remove surrounding document content and embedded metadata. It is evidence of the foundational skills behind this portfolio—not a claim that the fictional clinic lab has already been implemented.
+
+![Genuine Cisco Packet Tracer wired and wireless topology from prior coursework](screenshots/packet-tracer-wired-wireless-topology.png)
+
+Additional approved evidence includes a [segmented Packet Tracer topology](screenshots/packet-tracer-segmented-topology.png) and a [sanitised Wireshark ICMP analysis](screenshots/wireshark-icmp-analysis-sanitised.png). The [evidence register](screenshots/README.md) records the source status and sanitisation applied to each image.
 
 ## Scenario
 
@@ -42,7 +50,10 @@ healthcare-network-security-lab/
 │   ├── logical-topology.svg
 │   └── traffic-policy.svg
 └── screenshots/
-    └── README.md
+    ├── README.md
+    ├── packet-tracer-segmented-topology.png
+    ├── packet-tracer-wired-wireless-topology.png
+    └── wireshark-icmp-analysis-sanitised.png
 ```
 
 ## Reproduce the lab
@@ -51,7 +62,7 @@ healthcare-network-security-lab/
 2. Follow the [Packet Tracer build guide](packet-tracer/BUILD-GUIDE.md), recording each verification result.
 3. Use the configuration files as **examples to adapt**, not as evidence of execution.
 4. Follow the [Wireshark capture guide](wireshark/CAPTURE-GUIDE.md) on an authorised lab network.
-5. Add only genuine, sanitised evidence following the [screenshot checklist](screenshots/README.md).
+5. Add only genuine, sanitised evidence following the [evidence checklist](screenshots/README.md).
 6. Update [implementation status](docs/implementation-status.md) after each test passes.
 
 ## Expected verification
@@ -66,7 +77,7 @@ healthcare-network-security-lab/
 
 ## Recruiter summary
 
-This repository shows how Amir approaches an entry-level network task: translate requirements into a topology and addressing plan, build reproducibly, test methodically, inspect packet behaviour, document faults, and propose proportionate security improvements. The lab is relevant to IT support, network support, SOC/cybersecurity internship, and healthcare IT roles.
+This repository shows how I approach an entry-level network task: translating requirements into a topology and addressing plan, building reproducibly, testing methodically, inspecting packet behaviour, documenting faults, and proposing proportionate security improvements. The lab is relevant to IT support, network support, SOC/cybersecurity internship, and healthcare IT roles.
 
 ## Privacy and ethics
 
