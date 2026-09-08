@@ -1,6 +1,6 @@
 # Cisco Packet Tracer build guide
 
-This guide produces a genuine `.pkt` file on Amir's own system. No binary lab file is included in this repository.
+This guide produces a genuine `.pkt` file on my own system. No binary lab file is included in this repository.
 
 ## 1. Place and name devices
 
