@@ -2,6 +2,12 @@
 
 Create a real capture only on a device and network you own or are authorised to inspect. The repository contains no fabricated packet capture.
 
+## Genuine prior-work example
+
+![Sanitised genuine Wireshark ICMP analysis from prior coursework](../screenshots/wireshark-icmp-analysis-sanitised.png)
+
+This screenshot was extracted from my coursework and shows genuine ICMP Echo Request/Reply inspection. Network addresses and raw frame bytes were covered with opaque redaction before publication because they can expose link- and network-layer identifiers. The visible filter, ICMP packet types, checksum result, identifier, sequence number, and response-frame reference remain genuine. This image is evidence of prior packet-analysis practice, not a capture from the fictional clinic lab.
+
 ## Safe lab procedure
 
 1. Close unrelated applications to minimise incidental data.
@@ -18,7 +24,7 @@ Create a real capture only on a device and network you own or are authorised to 
 - Remove unrelated packets and payloads.
 - Ensure addresses and hostnames belong only to the fictional lab.
 - Do not publish real public IPs, MAC addresses, usernames, cookies, tokens, DNS history, or patient/personal data.
-- Prefer screenshots with MAC addresses blurred or cropped.
+- Prefer screenshots with MAC addresses removed, cropped, or covered with opaque redaction.
 - State the tool/version and test method; never imply the capture came from production healthcare equipment.
 
 Use [ANALYSIS-TEMPLATE.md](ANALYSIS-TEMPLATE.md) to document findings without inventing values.
