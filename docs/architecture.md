@@ -26,3 +26,11 @@ The router subinterfaces form the Layer 3 boundary between zones. The switch tru
 ## Scope boundaries
 
 This is an educational simulation, not a production healthcare design. It contains no patient systems, medical-device certification assumptions, high-availability design, regulatory compliance claim, or connection to a real clinic.
+
+## Coursework evidence informing the design
+
+The following genuine Packet Tracer screenshot demonstrates my earlier experience laying out wired and wireless endpoints in distinct functional groups.
+
+![Genuine segmented Cisco Packet Tracer topology from prior coursework](../screenshots/packet-tracer-segmented-topology.png)
+
+The **Sales**, **Marketing**, and **Production** labels belong to the original coursework scenario; they are not clinic departments. The coloured areas demonstrate topology organisation only and do not prove that VLANs, ACLs, or the clinic security policy were configured. Those controls remain proposed extensions until they are built and verified using this repository's guides.

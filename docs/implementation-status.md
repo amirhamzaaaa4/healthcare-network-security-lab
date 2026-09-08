@@ -5,9 +5,9 @@ This ledger prevents design intentions from being presented as completed work. C
 | Capability | Status at publication | Evidence needed to mark Verified |
 |---|---|---|
 | Foundational IPv4 and LAN exercises | Coursework skill | Sanitised new-lab screenshots optional |
-| Packet Tracer wired/wireless topology work | Coursework skill | New clinic `.pkt` plus topology screenshot |
-| `ping`, `tracert`, `ipconfig`, ARP inspection | Coursework skill | New clinic test log/screenshots |
-| Wireshark ICMP inspection | Coursework skill | New authorised capture and analysis |
+| Packet Tracer wired/wireless topology work | Coursework evidence attached | [Sanitised topology screenshot](../screenshots/packet-tracer-wired-wireless-topology.png); a new clinic `.pkt` is still required to verify the clinic build |
+| `ping`, `tracert`, `ipconfig`, ARP inspection | Coursework skill | No historical screenshot published because the available images exposed personal or network identifiers; add new clinic test logs/screenshots |
+| Wireshark ICMP inspection | Coursework evidence attached | [Sanitised ICMP screenshot](../screenshots/wireshark-icmp-analysis-sanitised.png); a new authorised clinic-lab capture is still required to verify the clinic build |
 | Clinic topology in this repository | Designed, not yet built | Overview screenshot and saved `.pkt` |
 | VLANs and router-on-a-stick | Proposed | Running-config excerpts and connectivity tests |
 | ACL policy | Proposed | Sanitised config plus allow/deny test matrix |
